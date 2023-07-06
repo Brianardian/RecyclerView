@@ -61,10 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     boolean stts;
-                    mhsList = db.list();
-                    if (mhsList.size() >= 5) {
-                        Toast.makeText(getApplicationContext(), "Data tidak boleh melebihi 5!", Toast.LENGTH_SHORT).show();
-                    } else {
+
                         if (!isEdit) {
                             mm = new MhsModel(-1, input_name, input_nim, input_phone);
                             stts = db.simpan(mm);
@@ -87,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }
-            }
+
         });
 
         Button btnView = (Button) findViewById(R.id.btnView);
