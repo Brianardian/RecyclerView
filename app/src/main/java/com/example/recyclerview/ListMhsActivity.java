@@ -45,7 +45,7 @@ public class ListMhsActivity extends AppCompatActivity {
                                 boolean stts = db.hapus(mm.getId());
                                 if(stts){
                                     mhsAdapter.removeItem(position);
-                                    Toast.makeText(getApplicationContext(),"Data telah dihapus",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(),"Data sudah dihapus",Toast.LENGTH_SHORT).show();
                                 }
                                 break;
                             case 1:
